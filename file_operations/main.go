@@ -16,7 +16,7 @@ func main() {
 
 	defer rf.Close()
 
-	wf, err := os.Create("./write_file")
+	wf, err := os.Create("./write_file.txt")
 
 	if err != nil {
 		fmt.Println("Failed to Create file", err)
