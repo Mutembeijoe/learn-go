@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	rf, err := os.OpenFile("./write_only.txt", os.O_RDONLY, 0666)
+	rf, err := os.OpenFile("./write_only.txt", os.O_WRONLY, 0666)
 
 	if err != nil {
 		fmt.Println("failed to Open file", err)
