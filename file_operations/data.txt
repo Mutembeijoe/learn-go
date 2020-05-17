@@ -1,0 +1,1 @@
+Hello man, This is an example of working with file data with data io in go
