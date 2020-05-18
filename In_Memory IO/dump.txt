@@ -1,0 +1,3 @@
+Hello there, 
+This in-memoty IO in golang. 
+Go is pretty cool, Isn't it ?
