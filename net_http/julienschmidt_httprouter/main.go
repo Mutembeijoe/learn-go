@@ -45,5 +45,6 @@ func main() {
 	mux := httprouter.New()
 	mux.GET("/api/go_version", getGoVersion)
 	mux.GET("/api/read_file/:name", getFileContents)
+	mux.ServeFiles("/static/*filepath", http.Dir("./static"))
 	log.Fatal(http.ListenAndServe(":8080", mux))
 }
