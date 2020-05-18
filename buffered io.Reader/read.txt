@@ -1,0 +1,13 @@
+
+1 Buffered IO in go reduces latency by buffering IO operations in memory
+2 Buffered IO in go reduces latency by buffering IO operations in memory
+3 Buffered IO in go reduces latency by buffering IO operations in memory
+4 Buffered IO in go reduces latency by buffering IO operations in memory
+5 Buffered IO in go reduces latency by buffering IO operations in memory
+6 Buffered IO in go reduces latency by buffering IO operations in memory
+7 Buffered IO in go reduces latency by buffering IO operations in memory
+8 Buffered IO in go reduces latency by buffering IO operations in memory
+9 Buffered IO in go reduces latency by buffering IO operations in memory
+10 Buffered IO in go reduces latency by buffering IO operations in memory
+11 Buffered IO in go reduces latency by buffering IO operations in memory
+12 Buffered IO in go reduces latency by buffering IO operations in memory
