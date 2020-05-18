@@ -23,7 +23,7 @@ func main() {
 
 	s := &http.Server{
 		Addr:         ":8080",
-		WriteTimeout: 10 * time.Second,
+		WriteTimeout: 10 * time.Second, // Good practice: enforce timeouts for servers you create!
 		ReadTimeout:  10 * time.Second,
 		Handler:      gMux,
 	}
