@@ -4,20 +4,20 @@ import "fmt"
 
 var choice int
 
-func main(){
+func main() {
 	fmt.Println("What is a Square?")
 	fmt.Print("Enter 1=Quadrilateral 2=Rectahedron :")
 
-	n, err:= fmt.Scanf("%d", &choice)
+	n, err := fmt.Scanf("%d", &choice)
 
-	if n != 1 || err != nil{
+	if n != 1 || err != nil {
 		fmt.Print("Follow the Instructions!")
 		return
 	}
 
-	if choice == 1{
+	if choice == 1 {
 		fmt.Println("Correct!")
-	}else{
+	} else {
 		fmt.Println("Failed, Google it")
 	}
 }
