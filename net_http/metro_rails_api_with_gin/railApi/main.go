@@ -8,13 +8,16 @@ import (
 	"github.com/mutembeijoe/data_io/net_http/metro_rails_api_with_gin/dbutils"
 )
 
+// DB - pointer to db driver
+var DB *sql.DB
+
 func main() {
 
-	db, err := sql.Open("sqlite3", "./railApi.db")
+	DB, err := sql.Open("sqlite3", "./railApi.db")
 
 	if err != nil {
 		log.Println("Failed to create db driver: ", err)
 	}
 
-	dbutils.InitializeDB(db)
+	dbutils.InitializeDB(DB)
 }

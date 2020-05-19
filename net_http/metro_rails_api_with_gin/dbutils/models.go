@@ -1,29 +1,21 @@
 package dbutils
 
-const train = `
-	CREATE TABLE IF NOT EXISTS train(
-		ID INTEGER PRIMARY KEY AUTOINCREMENT,
-		DRIVER_NAME VARCHAR(64) NULL,
-		OPERATING_STATUS BOOLEAN
-	)
-`
+type TrainResource struct {
+	ID              int    `json:"id"`
+	DriverName      string `json:"drivers_name"`
+	OperatingStatus bool   `json:"operating_Status"`
+}
 
-const station = `
-	CREATE TABLE IF NOT EXISTS station(
-		ID INTEGER PRIMARY KEY AUTOINCREMENT,
-		NAME VARCHAR(64) NULL,
-		OPENING_TIME TIME NULL,
-		CLOSING_TIME TIME NULL
-	)
-`
+type StationResource struct {
+	ID          int    `json:"id"`
+	Name        string `json:"name"`
+	OpeningTime string `json:"opening_time"`
+	ClosingTime string `json:"closing_time"`
+}
 
-const schedule = `
-	CREATE TABLE IF NOT EXISTS schedule(
-		ID INTEGER PRIMARY KEY AUTOINCREMENT,
-		TRAIN_ID INT,
-		STATION_ID INT,
-		ARRIVAL_TIME TIME,
-		FOREIGN KEY (TRAIN_ID) REFERENCES train(ID),
-		FOREIGN KEY (STATION_ID) REFERENCES station(ID)
-	)
-`
+type Schedule struct {
+	ID          int    `json:"id"`
+	TrainID     int    `json:"train_id"`
+	StationID   int    `json:"station_id"`
+	ArrivalTime string `json:"arrival_time"`
+}
