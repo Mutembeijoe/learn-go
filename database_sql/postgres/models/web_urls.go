@@ -7,14 +7,14 @@ import (
 )
 
 func InitDB() (*sql.DB, error) {
-	connStr := "postgres://orion:goodlife@localhost/goDB?sslmode=disable"
+	connStr := "postgres://orion:goodlife@localhost/godb?sslmode=disable"
 	db, err := sql.Open("postgres", connStr)
 
 	if err != nil {
 		return nil, err
 	}
 
-	stmt, err:= db.Prepare("CREATE TABLE WEB_URL(ID SERIAL PRIMARY KEY, URL TEXT NOT NULL);")
+	stmt, err:= db.Prepare("CREATE TABLE IF NOT EXISTS WEB_URL(ID SERIAL PRIMARY KEY, URL TEXT NOT NULL);")
 
 	if err!=nil{
 		return nil, err
